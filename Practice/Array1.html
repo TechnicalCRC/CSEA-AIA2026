@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Array Filter</h1>
+  <div>
+    <div id="even_num" style="display: inline; float:left;background-color: aqua;width:50%"></div>
+    <div id="odd_num" style="display: inline; float:right; background-color: yellowgreen;width: 50%;"></div>
+  </div>
+  <script>
+    let numbers = [23, 11, 56, 34, 76, 33, 18, 37, 48];
+
+    // numbers.push(77);
+    // numbers.pop();
+    // numbers.pop();
+
+    numbers.unshift(83);
+    numbers.shift();
+    numbers.shift();
+
+    let e_num = numbers.filter(num => num % 2 == 0);
+    let o_num = numbers.filter(num => num % 2 != 0);
+    
+    for(i=0; i<e_num.length;i++)
+    even_num.innerHTML += '<br>' +  e_num[i];
+
+    o_num.forEach(i=>{
+          odd_num.innerHTML += '<br>' + i;
+    });
+
+  </script>
+
+</body>
+
+</html>

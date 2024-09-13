@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Object</h1>
+  <div id="emp-detail">
+  </div>
+  <script>
+    let emp = [
+      {
+        empid: 101,
+        name: 'Ravi',
+        salary: 23000
+      }, {
+        empid: 102,
+        name: 'Kavi',
+        salary: 13000
+      }, {
+        empid: 103,
+        name: 'Abhi',
+        salary: 22000
+      }, {
+        empid: 104,
+        name: 'Sameer',
+        salary: 63000
+      }, {
+        empid: 105,
+        name: 'Rima',
+        salary: 26000
+      }
+    ];
+
+    ans = '';
+    emp.forEach(data => {
+      if(data.salary < 25000){
+      ans += `<p>
+                 <b>EmpId: </b> ${data.empid}
+                 <b>Name: </b> ${data.name}
+                 <b>Salary: </b>${data.salary} 
+              </p><hr>`;
+            }
+    });
+    document.querySelector('#emp-detail').innerHTML = ans;
+
+  </script>
+</body>
+
+</html>
