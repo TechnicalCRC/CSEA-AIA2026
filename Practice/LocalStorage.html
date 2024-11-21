@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Local Storage</h1>
+  <script>
+    let name = "Manish";
+    console.log(name)
+    localStorage.setItem("StuName","Shyam")
+    localStorage.setItem("StuAge",34)
+    let age = localStorage.getItem("StuAge");
+    console.log("Age is " + age)
+
+    let person = {
+      name:"Ravi",
+      age:32,
+      address:{
+      HNo:10,  
+      city:"Noida",
+      state:"UP"
+      }
+    }
+    localStorage.setItem("objPerson",person)
+    let per = localStorage.getItem("objPerson");
+    console.log(per)
+
+    // localStorage.removeItem("StuName")
+    // localStorage.removeItem("objPerson")
+
+//    localStorage.clear()
+console.log(localStorage.length)
+  </script>
+</body>
+</html>
