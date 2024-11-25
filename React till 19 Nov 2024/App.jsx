@@ -15,18 +15,22 @@ import BootStrap1 from './BootStrap1.jsx'
 import FoodPanner2 from "./FoodPanner2.jsx";
 import Person from "./Person.jsx";
 import FoodPanner from "./ComponentFood/FoodPanner.jsx";
-
+import MovieData from "./MovieData.jsx";
+import DataMovie from "./DataMovie.js";
+import Todo from "./Todo.jsx";
 
 function App(){
   let nameData="Aditya";
   let branchData ="B.Tech";
   let courseData = "AI-A";
 
+
   return <>
-      {/* FoodPlanner Project by components division and props */}   
-      <FoodPlanner></FoodPlanner>
-   
-    {/*  props practice - pass attribute */} 
+   <Todo></Todo>
+
+   {/* <MovieData mData={DataMovie} ></MovieData> */}
+
+  {/* <FoodPanner></FoodPanner>  */}
   {/* <Person name={nameData} course={courseData} branch={branchData}></Person> */}
   </>
 }
